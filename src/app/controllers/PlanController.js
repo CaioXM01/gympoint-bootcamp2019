@@ -65,7 +65,7 @@ class PlanController {
       return res.status(400).json({ error: 'Plan not exists!' });
     }
 
-    const planExists = await Plan.findOne({
+    const planExists = await Plan.finddOne({
       where: {
         title: req.body.title,
         duration: req.body.duration,
